@@ -3,4 +3,141 @@
  * Este contenido no debe tener uso comercial y es una prueba de capacidades
  *
  * Autor: Irwing Naranjo
+ *
+ * #0 generales
+ * #1 header-top
+ * #2
+ * #3
+ * #4
+ * #5 sponsors
+ * #6 personalizaciones
+ *
  */
+
+
+/* #0 generales */
+
+
+/* #1 header-top */
+	.header-top{
+		height: 40px;
+		line-height: 40px;
+		font-size: 11pt;
+		font-weight: bold;
+		color: #4a4a4a;
+	}
+		.select-language{
+			background: transparent;
+			border:none;
+		}
+			.text-call a{
+				color: #084C99;
+				text-decoration: none;
+			}
+				.text-call a:hover{
+					color: #053469;
+				}
+		.links-socials{
+			padding: 0;
+			text-align: right;
+		}
+			.links-socials li{
+				list-style: none;
+				display: inline-block;
+				margin: 0 5px;
+				font-size: 18pt;
+			}
+				.links-socials li a{
+					color: #98BF54;
+				}
+					.links-socials li a:hover{
+						color: #728f40;
+					}
+
+/* #2  */
+
+/* #3 banner */
+	.banner{
+		background: url(../img/bg1.jpg) no-repeat center center ;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-height: 400px;
+	}
+		.shadow{
+			background: rgba(0,0,0,0.3);
+			height:400px;
+			width: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+		.action{
+			padding-top: 150px;
+			position: absolute;
+			color: #fff;
+			z-index: 2;
+		}
+			.action h2{
+				font-size: 52pt;
+				margin: 0;
+			}
+			.action h4{
+				font-size: 20pt;
+			}
+			.action button{
+				background: #95e900;
+				padding: 5px 30px;
+				font-size: 17pt;
+				font-weight: bold;
+				color: #FFF;
+				text-shadow: 0px 0px 1px #6a8e29;
+			}
+				.action button:hover{
+					background: #6ca802;
+					color: #FFF;
+				}
+
+/* #4 content */
+	.content{}
+		.description{
+			padding: 50px 60px;
+		}
+			.description p{
+				font-size: 2rem;
+			}
+		.img-circle{
+			margin-bottom: -50px;
+			z-index: 2;
+			position: relative;
+		}
+			.circle{
+				width: 200px;
+				height: 200px;
+				background: #019BD9;
+				border-radius: 50%;
+				margin: 0 auto;
+			}
+		.details img{
+			width: 100%;
+			margin: 0px 0px 15px 0px;
+			z-index: 1;
+			position: relative;
+		}
+		.details-text{
+			margin: 0px 0px 15px 0px;
+			z-index: 1;
+			position: relative;
+			background: #F9FBF0;
+			padding: 30px 30px 10px 30px;
+			font-size: 11pt;
+			color: #747474;
+		}
+		.details-text h3{
+			font-size: 24pt;
+		}
+
+/* #5 sponsors */
+	.sponsors{
+		padding-top: 30px;
+	}
