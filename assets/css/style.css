@@ -16,6 +16,17 @@
 
 
 /* #0 generales */
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+.font-dancing-400{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 400;
+}
+.font-dancing-700{
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+}
 
 
 /* #1 header-top */
@@ -53,8 +64,74 @@
 					.links-socials li a:hover{
 						color: #728f40;
 					}
+	.nav-roles{
+		margin-bottom: 20px;
+		border-bottom: 1px solid #f1f1f1;
+		padding-bottom: 20px;
+	}
+		.select-roles{
+			background: #004C9A;
+			border-radius: 0;
+			padding: 10px 10px;
+		}
 
-/* #2  */
+/* #2 nav */
+	.navbar{
+		margin-bottom: 0;
+		margin: 0;
+	}
+	.nav-secondary{
+		background: rgba(255, 255, 255, 0.8);
+		z-index: 3;
+	}
+
+	.nav-primary .navbar-nav > li,
+	.nav-secondary .navbar-nav > li{
+		text-transform: uppercase;
+		font-size: 1.2rem;
+	}
+	.nav-secondary .navbar-nav > li{
+		text-transform: capitalize;
+		font-size: 1.6rem;
+	}
+		.nav-primary .navbar-nav > li a,
+		.nav-secondary .navbar-nav > li a{
+			color: #656563;
+			font-weight: bold;
+			float: left;
+			width: 95%;
+		}
+
+	.nav-primary .navbar-nav,
+	.nav-secondary .navbar-nav {
+	    display:table;
+	    width:100%;
+	    margin: 0;
+	}
+	.nav-primary .navbar-nav > li,
+	.nav-secondary .navbar-nav > li {
+	    float:none;
+	    display:table-cell;
+	    text-align:center;
+	}
+	.nav-primary .navbar-nav > li:after,
+	.nav-secondary .navbar-nav > li:after{
+		float: left;
+		width: 4%;
+	    content: '*';
+		margin: 17px 0 0 0;
+		padding: 0;
+		width: auto;
+	}
+		.nav-primary .navbar-nav > li:last-child:after,
+		.nav-secondary .navbar-nav > li:last-child:after{
+		    content: '';
+		}
+	.navbar-default{
+		border:0;
+		margin-bottom: 0 !important;
+		box-shadow: none !important;
+	}
 
 /* #3 banner */
 	.banner{
@@ -64,6 +141,7 @@
 		-o-background-size: cover;
 		background-size: cover;
 		min-height: 400px;
+		margin-top: -51px;
 	}
 		.shadow{
 			background: rgba(0,0,0,0.3);
@@ -73,7 +151,7 @@
 			z-index: 1;
 		}
 		.action{
-			padding-top: 150px;
+			padding-top: 120px;
 			position: absolute;
 			color: #fff;
 			z-index: 2;
@@ -111,12 +189,23 @@
 			z-index: 2;
 			position: relative;
 		}
+			.content-circle{
+				margin:0 auto;
+				max-width:250px;
+			}
 			.circle{
-				width: 200px;
-				height: 200px;
+				width: 250px;
+				height: 250px;
 				background: #019BD9;
 				border-radius: 50%;
 				margin: 0 auto;
+
+				display: table-cell;
+				text-align: center;
+				font-size:50px;
+				vertical-align: middle;
+				color: #FFF;
+				line-height: 0.7;
 			}
 		.details img{
 			width: 100%;
@@ -136,8 +225,120 @@
 		.details-text h3{
 			font-size: 24pt;
 		}
+		.img-larga{
+			float: left;
+		}
+			.img-larga img{
+				width: 100%;
+			}
 
 /* #5 sponsors */
 	.sponsors{
-		padding-top: 30px;
+		padding: 0px 0 40px 0;
 	}
+		.sponsors div.img-content{
+			line-height: 80px;
+			padding-top: 30px;
+		}
+		.sponsors img{
+			max-width: 100%;
+			max-height: 80px;
+		}
+
+/* #5 footer */
+	.footer{
+		color: #FFF;
+		padding: 60px 0;
+	}
+		.footer h3{
+			font-size: 13pt;
+			border-bottom: 1px solid rgba(255,255,255,0.2);
+			padding-bottom: 20px;
+			margin-bottom: 10px;
+		}
+		.footer button{
+			background: #96C050;
+			border-color: #96C050;
+			color: #FFF;
+		}
+			.footer button:hover{
+				background: #627e32;
+				border-color: #627e32;
+				color: #FFF;
+			}
+		.footer ul{
+			padding-left: 10px;
+		}
+			.footer li{
+				list-style: none;
+				padding: 6px 0;
+			}
+			.footer li:before{
+				content: '-';
+				margin-right: 5px;
+			}
+			.footer li a{
+				color: #fff;
+			}
+				.footer li a:hover{
+					color: #656563;
+				}
+		.footer .links-socials{
+			margin-top: 10px;
+			text-align: left;
+		}
+			.footer .links-socials li:before{
+				content: '';
+				margin-right: 0;
+			}
+
+/* #6 Reservations */
+	.reservations{
+		padding: 20px 0 30px 0;
+	}
+		.reservations h3{
+			font-size: 16pt;
+			border-bottom: 1px solid rgba(255,255,255,0.2);
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			color: #FFF;
+		}
+		.reservations select{
+			width: 100% !important;
+		}
+		.reservations input,
+		.reservations select,
+		.reservations button{
+			width: 100%;
+		}
+		.reservations .form-group{
+			padding: 0 20px;
+		}
+		.reservations .input-group-addon{
+			background:#fff;color:#a8a8a8;
+		}
+		.reservations button{
+			background: #002C5B;
+			color: #FFF;
+			max-width: 300px;
+		}
+		.reservations button{
+			background: #002C5B;
+			color: #FFF;
+		}
+
+/* #00 responsive */
+@media (max-width: 1200px) {
+	.nav-responsive {
+		margin-bottom: 10px;
+	}
+	.banner {
+		margin-top: 0;
+	}
+	.nav-roles{
+		text-align: left;
+		float: left;
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
